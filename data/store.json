@@ -1,0 +1,131 @@
+{
+  "users": [
+    {
+      "id": "usr_admin_057",
+      "fullName": "Administrador Oficial (Multicaixa)",
+      "phone": "944636057",
+      "role": "admin",
+      "status": "active",
+      "createdAt": "2026-10-10T09:26:38.009Z"
+    },
+    {
+      "id": "usr_1791624433701_2zdw",
+      "fullName": "Pedro Teste",
+      "phone": "923112233",
+      "role": "player",
+      "status": "active",
+      "createdAt": "2026-10-10T09:27:13.701Z"
+    }
+  ],
+  "passwords": {
+    "usr_admin_057": "c1eaf79d567bae7fb490f93a2a28ac76bea9e8305142bb599bfe587cd6088a2e",
+    "usr_1791624433701_2zdw": "54cb3ccd68e50ea27beaa80b72505f53ab866193cde1da01c6723663407c3207"
+  },
+  "wallets": {
+    "usr_admin_057": {
+      "userId": "usr_admin_057",
+      "pendingValidationBalance": 0,
+      "availableBalance": 0,
+      "totalEarned": 0,
+      "totalPaid": 0,
+      "pendingWithdrawals": 0,
+      "updatedAt": "2026-10-10T09:26:38.010Z"
+    },
+    "usr_1791624433701_2zdw": {
+      "userId": "usr_1791624433701_2zdw",
+      "pendingValidationBalance": 0,
+      "availableBalance": 0,
+      "totalEarned": 0,
+      "totalPaid": 0,
+      "pendingWithdrawals": 0,
+      "updatedAt": "2026-10-10T09:27:13.701Z"
+    }
+  },
+  "payments": [
+    {
+      "id": "pay_1791624442965_1av3",
+      "userId": "usr_1791624433701_2zdw",
+      "userFullName": "Pedro Teste",
+      "userPhone": "923112233",
+      "amount": 100,
+      "method": "Multicaixa Express",
+      "destinationPhone": "944 636 057",
+      "referenceCode": "MCX-DEMO-641154",
+      "proofNote": "Pagamento instantâneo via Multicaixa Express (Ambiente de Demonstração)",
+      "status": "approved",
+      "createdAt": "2026-10-10T09:27:22.965Z",
+      "approvedAt": "2026-10-10T09:27:22.965Z",
+      "approvedBy": "Sistema Multicaixa Express Automático",
+      "sessionId": "ses_1791624442966_c2p2"
+    }
+  ],
+  "sessions": [
+    {
+      "id": "ses_1791624442966_c2p2",
+      "userId": "usr_1791624433701_2zdw",
+      "userFullName": "Pedro Teste",
+      "userPhone": "923112233",
+      "paymentId": "pay_1791624442965_1av3",
+      "status": "active",
+      "initialScramble": [
+        "R2",
+        "F",
+        "B2",
+        "L'",
+        "D2",
+        "R2",
+        "L2",
+        "B'",
+        "R2",
+        "F",
+        "R2",
+        "D'",
+        "R",
+        "D'",
+        "F'",
+        "R'",
+        "B'",
+        "R'",
+        "U",
+        "B'"
+      ],
+      "currentCubeState": "RBUDUDDRLBRLRRURLFBBUUFFLBFFUUDDBLFDBLRDLLRRDDUBLBFUFF",
+      "moves": [
+        {
+          "move": "U",
+          "timestamp": 1791624456943
+        }
+      ],
+      "durationSeconds": 1800,
+      "startedAt": "2026-10-10T09:27:22.966Z",
+      "expiresAt": "2026-10-10T09:57:22.966Z",
+      "remainingSeconds": 1786,
+      "prizeAmount": 2000,
+      "prizeStatus": "pending_validation"
+    }
+  ],
+  "withdrawals": [],
+  "transactions": [
+    {
+      "id": "tx_1791624442966",
+      "userId": "usr_1791624433701_2zdw",
+      "type": "payment_entry",
+      "amount": 100,
+      "description": "Pagamento de entrada da sessão (100 Kz - Multicaixa Express)",
+      "referenceId": "pay_1791624442965_1av3",
+      "createdAt": "2026-10-10T09:27:22.966Z"
+    }
+  ],
+  "auditLogs": [
+    {
+      "id": "aud_1791624442966",
+      "adminId": "usr_admin_057",
+      "adminName": "Sistema Multicaixa Express Automático",
+      "action": "APPROVE_PAYMENT",
+      "targetType": "PAYMENT",
+      "targetId": "pay_1791624442965_1av3",
+      "details": "Pagamento 100 Kz aprovado para Pedro Teste",
+      "createdAt": "2026-10-10T09:27:22.966Z"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "short_name": "Cubo Mágico",
+  "name": "Cubo Mágico — Como Ser Milionário!",
+  "description": "Paga 100 Kz. Resolve o cubo. Ganha 2.000 Kz! Desafio 3D em Angola.",
+  "icons": [
+    {
+      "src": "/src/assets/images/angola_winner_trophy_1791623603816.jpg",
+      "type": "image/jpeg",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#030712",
+  "theme_color": "#030712",
+  "display": "standalone",
+  "orientation": "portrait"
+}
